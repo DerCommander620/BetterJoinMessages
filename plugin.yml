@@ -1,4 +1,4 @@
-name: CustomJoinMessages
+name: BetterJoinMessages
 version: 1.0.0
 main: JoinSystem\Main
 api: [4.0.0]
