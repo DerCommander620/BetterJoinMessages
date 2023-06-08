@@ -1,4 +1,5 @@
 # JoinSystem Configuration
+# {player} = the PlayerName who Joined\Left
 # ==============================================================================
-Join.Prefix: "§7[§a+§7]"
-Leave.Prefix: "§7[§c-§7]"
+JoinMessage: "§7[§a+§7] {player}"
+LeaveMessage: "§7[§c-§7] {player}"
