@@ -11,6 +11,6 @@ class JoinMessage implements Listener{
 
     public function onJoin(PlayerJoinEvent $event){
             $config = Main::getInstance()->getConfig();
-            $event->setJoinMessage($config->get("Join.Prefix") . " §a" . $event->getPlayer()->getDisplayName());
+            $event->setJoinMessage(str_replace(["{player}"], [$event->getPlayer()->getName()], $config->get("JoinMessage")));
     }
 }
